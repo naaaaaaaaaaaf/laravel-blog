@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('entries/form', 'BlogController@form')->name('entries_form');
+Route::post('entries/post', 'BlogController@post')->name('entries_post');

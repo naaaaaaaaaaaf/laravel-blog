@@ -16,6 +16,7 @@ class BlogController extends Controller
         // 「依存注入」により、コンストラクタの引数にタイプヒントを指定するだけで、
         // インスタンスが生成される（コンストラクターインジェクション）
         $this->article = $article;
+        $this->middleware('auth');
     }
 
     public function form()

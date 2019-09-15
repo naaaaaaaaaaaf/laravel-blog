@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 Route::get('entries/form', 'BlogController@form')->name('entries_form');
 Route::post('entries/post', 'BlogController@post')->name('entries_post');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
